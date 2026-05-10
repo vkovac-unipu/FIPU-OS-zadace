@@ -15,7 +15,7 @@ informatika (online) <br>
 
 
 
-<img src="image-11.png" width="400">
+<img src="image-0.png" width="400">
 
 ## 2. **Za svaki od sljedećih zadataka napravite odgovarajući _screenshot_:**
 
@@ -45,14 +45,17 @@ Mozemo vidjeti port u statusu SSH posluzitelja ili pomocu `ss -tuln`
 
   - korištenjem **Bridged adaptera**
 
-<img src="image-8.png" width="400">
+<img src="image-8.png" width="300">
+
+---
+<br><br>
 
 ## 3. Skripta 
 
 Putem domaćina, **izradite novu bash skriptu** unutar virtualnog stroja, u direktoriju `/home/username/`. Skripta treba napraviti **detaljan ispis svih datoteka** (uključujući skrivene) iz korijenskog direktorija VM-a (`/`).
 
-Screenchot terminala domacina: <br>
+Screenshot terminala domacina: <br>
 <img src="image-10.png" width="400" height="400">
 <br><br>
-Screnshot iz VM-a:<br><br>
+Screenshot iz VM-a:<br><br>
 <img src="image-9.png" width="400">
