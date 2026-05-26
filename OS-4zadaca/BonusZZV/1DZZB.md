@@ -200,9 +200,9 @@ cowsay "$zastavica" "$poruka"
 
 
 ```bash
-vilibald-kovac@vili-server:~/node_project$ ./cowsay_skripta.sh "Hvala za zabavnu vjezbu!" -b
+vilibald-kovac@vili-server:~/node_project$ ./cowsay_skripta.sh "Hvala na zabavnoj vjezbi!" -b
  __________________________
-< Hvala za zabavnu vjezbu! >
+< Hvala na zabavnoj vjezbi! >
  --------------------------
         \   ^__^
          \  (==)\_______
@@ -214,3 +214,4 @@ vilibald-kovac@vili-server:~/node_project$
 ```
 
 
+ß
