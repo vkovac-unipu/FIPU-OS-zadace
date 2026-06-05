@@ -80,8 +80,8 @@ done
 ### Pokrenite skriptu sa zadanim, većim i manjim `NI` prioritetom i napravite screenshot `htop` alata.
 
 - sa zadanim samo pokrecemo i ne moramo pisati 
-- za veci prioritet npr. `nice -n -10 ./prebaci.sh`
-- za manji prioritet npr. `nice -n 10 ./prebaci.sh`
+- za veci prioritet npr. `sudo nice -n -10 ./prebaci.sh`
+- za manji prioritet npr. `sudo nice -n 10 ./prebaci.sh`
 
 Screencshot pokretanja s vecim prioritetom (stavio sam `sleep` na 5 da stignem napraviti screenshot):
 
@@ -122,18 +122,25 @@ vilibald-kovac@vili-server:~$ ls -ld ./project
 Definirajte oktalne reprezentacije dozvola za sljedeće dozvole:
 
 - `rwxr-xr-x`
+  - 755
   - vlasnik moze sve (citati, pisati, izvrsavati), grupa i ostali korisnici oboje mogu citati i izvrsavati 
 - `rw-r--r--`
-  - vlasnik moze vitati i pisati, grupa i ostali korisnici samo citati
+  - 644
+  - vlasnik moze citati i pisati, grupa i ostali korisnici samo citati
 - `rwx------`
+  - 700
   - vlasnik moze sve, grupa i ostali korisnici ne mogu nista
 - `rw-rw-r--`
+  - 664 
   - vlasnik moze citati i pisati, grupa moze citati i pisati, ostali korisnici mogu samo citati
 - `rwxrwxrwx`
+  - 777
   - svi imaju sve dozvole
-- `r--r--r--`
+  - `r--r--r--`
+  - 444
   - svi mogu samo citati
 - `rw-------`
+  - 600
   - samo vlasnik moze citati i pisati, ostali nemaju dozvole
 
 
@@ -219,12 +226,12 @@ done
 
 oktalni="${vlasnik}${grupa}${ostali}"
 
-chmod $oktalni "$putanja"
+chmod "$oktalni" "$putanja"
 
 echo "Oktalna reprezentacija od $znakovi je $oktalni"
 echo "Detalji datoteke su sada: "
 
-ls -ld $putanja
+ls -ld "$putanja"	
 
 echo "Kraj"
 
